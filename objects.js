@@ -4,7 +4,7 @@ let age = 30;
 let person = {
   name: 'Thanh',
   age: 30,
-};
+}
 
 console.log(person);
 console.log(typeof person);
