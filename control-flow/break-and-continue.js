@@ -6,6 +6,7 @@ while (i <= 10) {
 }
 
 
+
 let y = 0;
 while (y <= 10) {
   if (y % 2 === 0) {
