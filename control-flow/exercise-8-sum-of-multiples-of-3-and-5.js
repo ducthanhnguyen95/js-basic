@@ -2,6 +2,7 @@ function sum(limit) {
   let result = 0;
   let three = 3;
   let five = 5;
+  let fifteen = 15;
   while (true) {
     if (three <= limit) {
       result += three;
@@ -12,7 +13,13 @@ function sum(limit) {
       five = five + 5;
     }
 
-    if (three > limit && five > limit) break;
+    if (fifteen <= limit) {
+      // Trừ đi bội số của 15 vì chúng đã được cộng hai lần
+      result -= fifteen;
+      fifteen += 15;
+    }
+
+    if (three > limit && five > limit && fifteen > limit) break;
   }
   return result;
 }
@@ -23,4 +30,5 @@ function sum2(limit) {
   return sum;
 }
 
-console.log(sum(10));
+console.log(sum(15));
+console.log(sum2(15));
