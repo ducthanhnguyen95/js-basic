@@ -4,9 +4,9 @@
 // showAddress(address)
 
 const address = {
-  street: "3 Downing",
+  street: "10 Downing",
   city: "London",
-  zipCode: 1000,
+  zipCode: 'SW1A 2AA',
 };
 
 function showAddress(address) {
